@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: process.env.API_ADMIN_URL, // adjust if your backend is on another origin
+  baseURL: process.env.REACT_APP_API_ADMIN_URL || "https://server.reviewmarketeu.com/admin",
   withCredentials: true,
 });
 
