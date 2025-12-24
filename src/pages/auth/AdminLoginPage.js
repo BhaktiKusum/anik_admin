@@ -27,7 +27,7 @@ function AdminLoginPage() {
 
     try {
       setLoading(true);
-      const res = await api.post("/admin/login", form);
+      const res = await api.post("/login", form);
 
       // expected: { token, admin: {...} }
       login(res.data.token, res.data.admin);

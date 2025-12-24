@@ -1,6 +1,6 @@
 // admin/src/utils/fileUrl.js
 
-const API_BASE_URL = process.env.API_BASE_URL
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://server.reviewmarketeu.com"
 
 export function getFileUrl(path) {
   if (!path) return "";
